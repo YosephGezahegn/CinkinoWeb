@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+    rel="preload"
+    as="style"
+    onload="this.rel = 'stylesheet'"
+    href="./material.min.css">
+  
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="./material.min.css">
+  </noscript>
+  
+  <link
+    rel="preload"
+    as="style"
+    onload="this.rel = 'stylesheet'"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </noscript>
+    
+    <title>React App</title>
+  </head>
+
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+<script type="module"> 
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+</script>
+<script src="./material.min.js" type="application/javascript"></script>
+  </body>
+</html>
