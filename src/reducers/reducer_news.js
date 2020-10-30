@@ -1,12 +1,12 @@
-import { FETCH_NEWS } from '../actions/index'
+import { FETCH_NEWS } from '../action/index';
 
 export const initialstate = {
     loading: false,
     newsList: [],
 
 };
-export default function (state = initialstate, action) {
-    console.log(action.payload)
+export default function news (state = initialstate, action) {
+    // console.log(action.payload)
     switch (action.type) {
 
         case FETCH_NEWS:

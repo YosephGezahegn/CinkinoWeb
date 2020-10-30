@@ -1,4 +1,4 @@
-import { FETCH_MOVIE_REQ, FETCH_MOVIE_SUCESS, FETCH_AREA } from '../actions/index';
+import { FETCH_MOVIE_REQ, FETCH_MOVIE_SUCESS, FETCH_AREA } from '../action/index';
 
 export const initialstate = {
 	loading: false,
@@ -97,7 +97,7 @@ export const initialstate = {
 			"address": "Kauppiaskatu 11, 20100 Turku"
 		}]
 };
-export default function (state = initialstate, action) {
+export default function fetchMovies (state = initialstate, action) {
 	switch (action.type) {
 		case FETCH_MOVIE_REQ:
 			return {

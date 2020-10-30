@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE_SUCESS } from '../actions/index';
+import { SEARCH_MOVIE_SUCESS } from '../action/index';
 
 export const initialState =
 {
@@ -6,7 +6,7 @@ export const initialState =
 }
 
 
-export default function (state = initialState, action) {
+export default function searchMovie(state = initialState, action) {
 	switch (action.type) {
 		case SEARCH_MOVIE_SUCESS:
 			return {

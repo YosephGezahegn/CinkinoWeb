@@ -1,15 +1,15 @@
 
 
-import { SELECTED_MOVIE } from '../actions/index';
+import { SELECTED_MOVIE } from '../action/index';
 
 export const initialState =
 {
-    selectedMovie: []
+    selectedMovie:{}
 }
 
 
-export default function (state = initialState, action) {
-    console.log(action)
+export default function  selected (state = initialState, action) {
+    // console.log(action)
     switch (action.type) {
         case SELECTED_MOVIE:
             return {
